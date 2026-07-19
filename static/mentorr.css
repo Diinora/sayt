@@ -1,0 +1,50 @@
+body {
+  background-color: #1a1a2e;
+   /* margin: 0;
+  padding: 0;   */
+}
+.mentors {
+  padding: 60px 40px;
+  
+  text-align: center;
+}
+
+.mentors h2 {
+  font-size: 32px;
+  margin-bottom: 40px;
+  color: #f7f7f9;
+}
+.mentor-card h3 {
+    color: beige;
+}
+.mentor-t {
+  color: #d9d3d3;
+  font-size: 13px;
+}
+
+.mentor-image {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 50%;      
+  margin-bottom: 15px;
+}
+
+.mentor-card {
+  padding: 25px 20px;
+  border-radius: 10px;
+  
+}
+
+.role {
+  color: #e8a33d;
+  
+  font-size: 14px;
+  font-weight: bold;
+  margin-bottom: 8px;
+} 
+.mentor-g {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
