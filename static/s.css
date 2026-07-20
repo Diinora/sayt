@@ -43,13 +43,7 @@ body {
     gap: 15px;
 }
 
-.menyu a.active {
-    background: #f4a825;
-    color: #0d2b28;
-    padding: 8px 16px;
-    border-radius: 6px;
-    font-weight: bold;
-}
+
 
 .btn-outline {
     color: white;
