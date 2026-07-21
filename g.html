@@ -43,7 +43,7 @@
         <div class="field-row">
           <div class="field">
             <label for="fname">Atı</label>
-            <input id="fname" name="fname" type="text" placeholder="Аты" required>
+            <input id="fname" name="fname" type="text" placeholder="Ati" required>
           </div>
           <div class="field">
             <label for="lname">Familiyasi</label>
@@ -63,7 +63,7 @@
 
         <div class="field">
           <label for="pass2">Paroldi qaytalan</label>
-          <input id="pass2" name="pass2" type="password" placeholder="Парольди қайта киритиң" required minlength="8">
+          <input id="pass2" name="pass2" type="password" placeholder="Paroldi qayta kiritin" required minlength="8">
         </div>
 
         <label class="check-row">
@@ -73,9 +73,9 @@
 
         <button type="submit" class="btn-submit">Dizimnen otiw</button>
 
-        <div class="divider"><span>yamasa</span></div>
+        <!-- <div class="divider"><span>yamasa</span></div>
 
-        <button type="button" class="btn-outline">Google arqalı dizimnen ótiw</button>
+        <button type="button" class="btn-outline">Google arqalı dizimnen ótiw</button> -->
 
       </form>
     </main>
@@ -95,7 +95,7 @@
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ ism: `${fname} ${lname}`, telefon: phone }),
       });
-      alert("Rahmat! Dizimińiz qabıl etildi.");
+      alert("Raxmet! Magliwmatlariniz qabıl etildi.");
       this.reset();
     } catch (err) {
       alert("Qátelik júz berdi, qayta urınıp kóriń.");
