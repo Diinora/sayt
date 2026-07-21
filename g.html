@@ -90,7 +90,7 @@
     const phone = document.querySelector('#phone').value;
 
     try {
-      await fetch('/.netlify/functions/register', {
+      await fetch('/api/register', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ ism: `${fname} ${lname}`, telefon: phone }),
