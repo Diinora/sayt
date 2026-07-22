@@ -234,7 +234,7 @@ body {
   transform: scale(1.1);
 }
 
-/* Mobil qurılmalar ushın moslasıw (Responsive) */
+/* Mobil qurılmalar ushın moslasıw (Responsive)
 @media (max-width: 768px) {
   .hero-container {
     grid-template-columns: 1fr;
@@ -248,4 +248,16 @@ body {
   .hero-stats {
     justify-content: center;
   }
+} */
+
+@media(max-width:768px) {
+    .navbar,
+    .card {
+        flex-direction: column;
+    }
+
+    nav {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
 }
