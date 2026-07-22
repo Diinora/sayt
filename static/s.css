@@ -30,19 +30,20 @@ img, video {
 
 /* Telefon o'lchami */
 @media (max-width: 768px) {
-  header .container {
+  .n {
     flex-direction: column;
     gap: 12px;
+    padding: 15px 20px;
   }
 
-  nav ul {
+  .menyu {
     flex-direction: column;
     align-items: center;
     gap: 10px;
-    display: none; 
+    display: none;
   }
 
-  nav ul.active {
+  .menyu.active {
     display: flex;
   }
 
@@ -50,8 +51,9 @@ img, video {
     display: block;
   }
 
-  h1 {
-    font-size: 28px;
+  .hero h1,
+  .hero-title {
+    font-size: 24px !important;
   }
 
   h2 {
@@ -75,8 +77,9 @@ img, video {
 
 /* Juda kichik ekranlar */
 @media (max-width: 420px) {
-  h1 {
-    font-size: 22px;
+  .hero h1,
+  .hero-title {
+    font-size: 20px !important;
   }
 
   .stats {
