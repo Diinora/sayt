@@ -1,6 +1,6 @@
 /* ===== RESPONSIVE (mobil) ===== */
 
-* {
+/* * {
   box-sizing: border-box;
 }
 
@@ -12,10 +12,10 @@ img, video {
 .container {
   width: 100%;
   padding: 0 16px;
-}
+} */
 
 /* Planshet o'lchami */
-@media (max-width: 992px) {
+/* @media (max-width: 992px) {
   .hero {
     flex-direction: column;
     text-align: center;
@@ -26,10 +26,10 @@ img, video {
     justify-content: center;
     gap: 20px;
   }
-}
+} */
 
 /* Telefon o'lchami */
-@media (max-width: 768px) {
+/* @media (max-width: 768px) {
   .n {
     flex-direction: column;
     gap: 12px;
@@ -73,10 +73,10 @@ img, video {
     width: 100%;
     text-align: center;
   }
-}
+} */
 
 /* Juda kichik ekranlar */
-@media (max-width: 420px) {
+/* @media (max-width: 420px) {
   .hero h1,
   .hero-title {
     font-size: 20px !important;
@@ -85,12 +85,24 @@ img, video {
   .stats {
     flex-direction: column;
   }
-}
+} */
 body {
   background-color: #1a1a2e;
   margin: 0;
   padding: 0;
 }
+@media(max-width:768px) {
+    .navbar,
+    .card {
+        flex-direction: column;
+    }
+
+    nav {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
+
 
 .n {
     display: flex;
