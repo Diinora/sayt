@@ -7,7 +7,7 @@ export default async function handler(req, res) {
   const token = process.env.BOT_TOKEN;
   const chatId = process.env.ADMIN_CHAT_ID;
 
-  const text = `🆕 Yangi ro'yxatdan o'tish!\n👤 Ism: ${ism}\n📞 Tel: ${telefon}`;
+  const text = `🆕 Jańa dizimnen ótiw!\n👤 Ati: ${ism}\n📞 Tel: ${telefon}`;
 
   const result = await fetch(`https://api.telegram.org/bot${token}/sendMessage`, {
     method: 'POST',
@@ -15,6 +15,6 @@ export default async function handler(req, res) {
     body: JSON.stringify({ chat_id: chatId, text }),
   });
 
-  if (!result.ok) return res.status(500).json({ error: 'Xatolik yuz berdi' });
+  if (!result.ok) return res.status(500).json({ error: 'Qatelik juz berdi' });
   return res.status(200).json({ success: true });
 }
