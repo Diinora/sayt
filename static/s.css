@@ -4,16 +4,20 @@ body {
   margin: 0;
   padding: 0;
 }
-@media(max-width:768px) {
-    .navbar,
-    .card {
-        flex-direction: column;
-    }
-
-    nav {
-        flex-wrap: wrap;
-        justify-content: center;
-    }
+@media (max-width: 860px){
+.page{ grid-template-columns: 1fr; }
+.brand-panel{
+padding: 36px 28px 64px;
+min-height: 260px;
+}
+.brand-text{ display: none; }
+.form-panel{ padding: 40px 24px; }
+.field-row{ grid-template-columns: 1fr; }
+}
+ 
+/* ---------- Reduced motion ---------- */
+@media (prefers-reduced-motion: reduce){
+*{ transition: none !important; }
 }
 .n {
     display: flex;
